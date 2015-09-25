@@ -1,0 +1,67 @@
+<div class="home-container">
+    <div class="module-panel-container">
+        <div class="module-title">
+            <h5>功能列表</h5>
+            <a class="ui-btn btn-primary u-floatRight" href="{:U('Admin/Role/add_node')}">创建新应用</a>
+        </div>
+        
+        <div class="console-panel">
+            <div class="panel-manage-content">
+                <div class="row node-structure-table">
+                    <foreach name="nodeItemGroup" item="singleApp">
+                    <div class="app-body">
+                        <p>
+                            <strong title="{$singleApp.remark}">{$singleApp.name}-{$singleApp.title}</strong>
+                            [<a href="{:U('Admin/Role/add_node')}?pid={$singleApp.id}">添加控制器</a>]
+                        </p>
+                        <foreach name="singleApp.child" item="singleController">
+                        <div class="app-ctrl">
+                            <span class="ctrl-title">
+                                <strong title="{$singleController.remark}">{$singleController.name}-{$singleController.title}</strong>
+                                [<a href="{:U('Admin/Role/add_node')}?pid={$singleController.id}">添加动作方法</a>]
+                            </span>
+                            <ul class="method-list">
+                                <foreach name="singleController.child" item="singleMethod">
+                                <li title="{$singleMethod.remark}">{$singleMethod.name}-{$singleMethod.title}</li>
+                                </foreach>
+                            </ul>
+                        </div>
+                        </foreach>
+                    </div>
+                    </foreach>
+                </div>
+                
+                <hr>
+                
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>应用名称</th>
+                            <th>应用描述</th>
+                            <th>应用简述</th>
+                            <th>状态</th>
+                            <th>pid</th>
+                            <th>level</th>
+                            <th>sort</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <foreach name="nodeItemList" item="singleItem">
+                            <tr>
+                                <th scope="row">{$singleItem.id}</th>
+                                <td>{$singleItem.name}</td>
+                                <td>{$singleItem.remark}</td>
+                                <td>{$singleItem.title}</td>
+                                <td>{$singleItem.status}</td>
+                                <td>{$singleItem.pid|default='--'}</td>
+                                <td>{$singleItem.level}</td>
+                                <td>{$singleItem.sort}</td>
+                            </tr>
+                        </foreach>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

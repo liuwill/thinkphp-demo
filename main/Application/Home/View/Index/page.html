@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <title>LiuWill</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="author" content="LiuWill" />
+        <!--<link rel='stylesheet' href='/static/lib/bootstrap/bootstrap.css' />-->
+        <link rel='stylesheet' href='/static/lib/pure/pure-min.css' />
+        <style>
+            body,div,button,a,table{font-family: proxima-nova,"Hiragino Sans GB","Microsoft YaHei","Wenquanyi Micro Hei","WenQuanYi Micro Hei Mono","WenQuanYi Zen Hei","WenQuanYi Zen Hei","Apple LiGothic Medium",SimHei,"ST Heiti","WenQuanYi Zen Hei Sharp";}
+        </style>
+    </head>
+    <body ng-app="myApp">
+        <table border="1" bordercolor="#4d4d4d" style="background-color:#fff" width="400" cellpadding="2" cellspacing="0">
+        <tr>
+            <td>用户编号</td>
+            <td>用户名</td>
+            <td>手机号</td>
+            <td>电子邮件</td>
+        </tr>
+        <foreach name="userList" item="user" >
+            <tr>
+                <td>{$user.uid}</td>
+                <td>{$user.username}</td>
+                <td>{$user.mobile}</td>
+                <td>{$user.email}</td>
+            </tr>
+        </foreach>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<style>
+    .btn-select-menu .dropdown-menu li{cursor: pointer}
+</style>
+<div class="home-container">
+    <div class="module-panel-container">
+        <div class="module-title">
+            <h5>用户列表</h5>
+            <a class="ui-btn btn-primary u-floatRight" href="{:U('Admin/User/add_user')}">创建新用户</a>
+        </div>
+        
+        <div class="console-panel">
+            <div class="panel-manage-content">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>用户名</th>
+                            <th>手机号</th>
+                            <th>邮箱</th>
+                            <th>添加时间</th>
+                            <th>更新</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <foreach name="adminUserList" item="singleUser">
+                            <tr>
+                                <th scope="row">{$singleUser.uid}</th>
+                                <td>{$singleUser.username}</td>
+                                <td>{$singleUser.mobile}</td>
+                                <td>{$singleUser.email}</td>
+                                <td>{$singleUser.regtime}</td>
+                                <td>
+                                    <a class="ui-btn btn-dark btn-table-action" action-type='role-config' href="{:U('Admin/Role/set_user_role')}?user={$singleUser.uid}" user-id="{$singleUser.uid}">选择/更换角色</a>
+                                </td>
+                            </tr>
+                        </foreach>
+                        <!--<div class="btn-select-menu">
+                            <div class="btn-group" role="group">
+                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">选择一个角色<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                  <li><a>Dropdown link</a></li>
+                                  <li><a>Dropdown link</a></li>
+                                </ul>
+                            </div>
+                            <a class="ui-btn btn-dark btn-table-action" action-type='role-config' user-id="{$singleUser.uid}">确认</a>
+                        </div>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

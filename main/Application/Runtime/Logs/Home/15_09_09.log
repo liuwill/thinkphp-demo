@@ -1,0 +1,210 @@
+[ 2015-09-09T14:31:49+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:32:07+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/page
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:32:13+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/database
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:33:00+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:35:54+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/database
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:35:59+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:36:07+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/database
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:36:26+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:37:56+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:37:58+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:38:11+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:38:13+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:38:44+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nobanserver.noban_user' doesn't exist
+
+[ 2015-09-09T14:38:45+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nobanserver.noban_user' doesn't exist
+
+[ 2015-09-09T14:38:47+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nobanserver.noban_user' doesn't exist
+
+[ 2015-09-09T14:38:48+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nobanserver.noban_user' doesn't exist
+
+[ 2015-09-09T14:38:48+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nobanserver.noban_user' doesn't exist
+
+[ 2015-09-09T14:38:49+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nobanserver.noban_user' doesn't exist
+
+[ 2015-09-09T14:39:11+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:39:58+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/user
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:40:50+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/user
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.user' doesn't exist
+
+[ 2015-09-09T14:52:28+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:53:40+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:53:45+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:54:08+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:54:25+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'nobanserver.noban_user' doesn't exist
+
+[ 2015-09-09T14:54:31+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:55:44+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T14:55:46+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:00:57+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:00:59+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:02:06+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:02:39+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:02:42+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:02:55+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:02:57+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:03:00+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:03:02+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:03:20+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:03:40+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:03:43+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:03:48+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:08:16+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: Think\Model:addConnect方法不存在！
+
+[ 2015-09-09T15:11:15+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:12:11+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:12:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:13:48+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:14:58+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:15:11+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:15:17+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:15:34+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:16:02+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:16:42+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:17:22+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:17:54+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:18:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:19:28+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:20:42+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:20:58+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:21:27+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:23:06+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:24:05+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:24:08+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:25:07+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:25:09+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:25:10+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:25:11+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:25:12+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:28:35+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+
+[ 2015-09-09T15:38:31+08:00 ] 192.168.0.88 /thinkphp/index.php/Home/Index/noban
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.usertb' doesn't exist
+

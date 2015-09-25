@@ -1,0 +1,34 @@
+<style>
+    .inner-console-panel{padding: 10px}
+    .result-show-block{margin-top: 10px}
+</style>
+<div class="home-container">
+    <div class="module-panel-container">
+        <div class="module-title">
+            <h5>查看某地的天气情况</h5>
+        </div>
+        
+        <div class="console-panel">
+            <div class="inner-console-panel col-md-11">
+                <div class="input-group">
+                    <input type="text" class="form-control" id="queryKeyIn" aria-label="...">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">查询 <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a class="info-query-btn" query-type="city" href="#">城市信息</a></li>
+                            <li><a class="info-query-btn" query-type="weather" href="#">天气信息</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a class="info-query-btn" query-type="ip" href="#">ip地址</a></li>
+                        </ul>
+                    </div><!-- /btn-group -->
+                </div><!-- /input-group -->
+                <div class="well result-show-block">
+                    <p>当前IP:{$Think.server.REMOTE_ADDR}</p>
+                    <pre>
+                        
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

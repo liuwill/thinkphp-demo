@@ -1,0 +1,119 @@
+[ 2015-09-11T09:30:11+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0720s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='18608776684' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0740s ]
+
+[ 2015-09-11T09:46:38+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0790s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0780s ]
+
+[ 2015-09-11T09:46:44+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0730s ]
+
+[ 2015-09-11T09:52:54+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'xcc' LIMIT 1   [ RunTime:0.0720s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='13629652292' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0790s ]
+
+[ 2015-09-11T09:53:32+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'xcc' LIMIT 1   [ RunTime:0.0690s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='13629652292' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0730s ]
+
+[ 2015-09-11T11:49:43+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/User/add_user
+ERR: 模板不存在:./Application/Admin/View/Admin/Index/index.html
+
+[ 2015-09-11T12:05:48+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Admin/Index.html
+ERR: 无法加载控制器:Admin
+
+[ 2015-09-11T14:55:16+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/User/create_account
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: range out of order in character class at offset 25 D:\www\thinkphp\Application\Admin\Controller\UserController.class.php 第 50 行.
+
+[ 2015-09-11T14:55:53+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/User/create_account
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: a520be72e15a90ecb10290a3e1ebd6c7 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 171 行.
+
+[ 2015-09-11T14:56:21+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/User/create_account
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: range out of order in character class at offset 25 D:\www\thinkphp\Application\Admin\Controller\UserController.class.php 第 50 行.
+
+[ 2015-09-11T14:56:49+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/User/create_account
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] preg_match(): Compilation failed: range out of order in character class at offset 25 D:\www\thinkphp\Application\Admin\Controller\UserController.class.php 第 50 行.
+
+[ 2015-09-11T14:57:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/User/create_account
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-09-11T15:02:21+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/User/create_account
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0770s ]
+SQL: INSERT INTO `admin_user` (`username`,`password`,`mobile`,`email`,`type`,`regtime`) VALUES ('test','96e79218965eb72c92a549dd5a330112','15808652165','liuwill@live.com','user','2015-09-11 15:02:21') [ RunTime:0.1286s ]
+
+[ 2015-09-11T15:05:50+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0780s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='15808652165' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0730s ]
+
+[ 2015-09-11T15:06:12+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0700s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='15808652165' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0780s ]
+
+[ 2015-09-11T16:49:21+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_role.html
+ERR: 无法加载控制器:Role
+
+[ 2015-09-11T16:49:43+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_role.html
+ERR: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dev_resource.add_role' doesn't exist
+
+[ 2015-09-11T17:10:32+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_role_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-11T17:10:55+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_role_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0730s ]
+SQL: INSERT INTO `think_role` (`name`,`remark`,`status`) VALUES ('user','普通用户，可以登录，查看数据，但是不能进行各种操作','1') [ RunTime:0.1530s ]
+

@@ -1,0 +1,365 @@
+[ 2015-09-14T09:18:02+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0760s ]
+
+[ 2015-09-14T10:05:16+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_node_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0920s ]
+SQL: INSERT INTO `think_node` (`name`,`remark`,`status`,`title`,`sort`,`pid`,`level`) VALUES ('user_search','检索用户信息','1','根据手机号、用户名来检索用户','1','0','1') [ RunTime:0.2130s ]
+
+[ 2015-09-14T10:29:51+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_node_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0810s ]
+SQL: INSERT INTO `think_node` (`name`,`remark`,`status`,`title`,`sort`,`pid`,`level`) VALUES ('date_show','日期天气查询','1','查询当天当地的天气和日历','1','0','1') [ RunTime:0.0940s ]
+
+[ 2015-09-14T10:30:29+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_node_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0830s ]
+SQL: INSERT INTO `think_node` (`name`,`remark`,`status`,`title`,`sort`,`pid`,`level`) VALUES ('query_weather','检索获取本地天气信息','1','通过接口调用获取天气信息','1','0','2') [ RunTime:0.0990s ]
+
+[ 2015-09-14T11:12:09+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_node_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0800s ]
+SQL: INSERT INTO `think_node` (`name`,`remark`,`status`,`title`,`sort`,`pid`,`level`) VALUES ('Admin','后台应用','1','后台主要模块','1','0','1') [ RunTime:0.0980s ]
+
+[ 2015-09-14T11:35:22+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_node_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0830s ]
+SQL: INSERT INTO `think_node` (`name`,`remark`,`status`,`title`,`sort`,`pid`,`level`) VALUES ('Info','提供获取信息的服务','1','获取各种系统外部信息的服务','1','0','2') [ RunTime:0.1150s ]
+
+[ 2015-09-14T11:54:11+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0850s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0910s ]
+
+[ 2015-09-14T11:54:26+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0890s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.1030s ]
+
+[ 2015-09-14T11:55:24+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0910s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0890s ]
+
+[ 2015-09-14T11:58:52+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0970s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0950s ]
+
+[ 2015-09-14T11:59:22+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0940s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0930s ]
+
+[ 2015-09-14T11:59:25+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0860s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0860s ]
+
+[ 2015-09-14T12:00:26+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0800s ]
+
+[ 2015-09-14T12:00:45+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0790s ]
+
+[ 2015-09-14T12:01:47+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0800s ]
+
+[ 2015-09-14T12:10:51+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0780s ]
+
+[ 2015-09-14T13:20:19+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0720s ]
+
+[ 2015-09-14T13:20:33+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0740s ]
+
+[ 2015-09-14T13:20:33+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0750s ]
+
+[ 2015-09-14T13:20:34+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0750s ]
+
+[ 2015-09-14T13:22:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0720s ]
+
+[ 2015-09-14T13:22:53+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0720s ]
+
+[ 2015-09-14T13:24:57+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0810s ]
+
+[ 2015-09-14T14:45:02+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0800s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0760s ]
+
+[ 2015-09-14T14:45:13+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0740s ]
+
+[ 2015-09-14T14:45:50+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0840s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0810s ]
+
+[ 2015-09-14T14:45:55+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0760s ]
+
+[ 2015-09-14T14:46:04+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0800s ]
+
+[ 2015-09-14T14:47:17+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0790s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0790s ]
+
+[ 2015-09-14T14:51:40+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0840s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0800s ]
+
+[ 2015-09-14T14:51:59+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0750s ]
+
+[ 2015-09-14T14:52:03+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0780s ]
+
+[ 2015-09-14T14:52:07+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0720s ]
+
+[ 2015-09-14T14:52:12+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0730s ]
+
+[ 2015-09-14T14:52:20+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0730s ]
+
+[ 2015-09-14T15:01:29+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0760s ]
+
+[ 2015-09-14T15:23:29+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0780s ]
+
+[ 2015-09-14T15:28:51+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0760s ]
+
+[ 2015-09-14T16:29:59+08:00 ] 192.168.0.88 /thinkphp/Admin/Role/role_access.html?role=1
+ERR: 非法操作:role_access
+
+[ 2015-09-14T16:30:03+08:00 ] 192.168.0.88 /thinkphp/Admin/Role/role_access.html?role=1
+ERR: 非法操作:role_access
+
+[ 2015-09-14T16:49:08+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.1140s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0800s ]
+
+[ 2015-09-14T17:45:58+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = '13629652292' LIMIT 1   [ RunTime:0.0730s ]
+
+[ 2015-09-14T17:46:09+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0710s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = '13629652292' LIMIT 1   [ RunTime:0.0700s ]
+
+[ 2015-09-14T17:46:19+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = '13629652292' LIMIT 1   [ RunTime:0.0740s ]
+
+[ 2015-09-14T17:48:13+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'xiachengchang' LIMIT 1   [ RunTime:0.0760s ]
+
+[ 2015-09-14T17:48:19+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'xiachengchang' LIMIT 1   [ RunTime:0.1020s ]
+
+[ 2015-09-14T17:49:24+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0800s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='15808652165' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.1020s ]
+
+[ 2015-09-14T18:16:15+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0780s ]
+
+[ 2015-09-14T18:16:47+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_node_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0750s ]
+SQL: INSERT INTO `think_node` (`name`,`remark`,`status`,`title`,`sort`,`pid`,`level`) VALUES ('User','后台用户管理','1','创建，并且维护用户相关信息','2','4','2') [ RunTime:0.1550s ]
+
+[ 2015-09-14T18:16:55+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0770s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0780s ]
+
+[ 2015-09-14T18:17:21+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_node_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0750s ]
+SQL: INSERT INTO `think_node` (`name`,`remark`,`status`,`title`,`sort`,`pid`,`level`) VALUES ('add_user','添加新用户','1','创建一个有登录权限的新用户','1','6','3') [ RunTime:0.0980s ]
+
+[ 2015-09-14T18:20:41+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.1660s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.1660s ]
+
+[ 2015-09-14T18:21:07+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_node_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.4880s ]
+SQL: INSERT INTO `think_node` (`name`,`remark`,`status`,`title`,`sort`,`pid`,`level`) VALUES ('user_manage','用户管理','1','查看后台用户信息，并且进行管理','1','6','3') [ RunTime:0.2890s ]
+

@@ -1,0 +1,106 @@
+[ 2015-09-16T09:00:07+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0960s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0880s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='15808652165' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0860s ]
+
+[ 2015-09-16T09:10:22+08:00 ] 192.168.0.88 /thinkphp/Admin/Public/logout
+ERR: 非法操作:logout
+
+[ 2015-09-16T09:10:39+08:00 ] 192.168.0.88 /thinkphp/Admin/Public/__URL__/login/
+ERR: 非法操作:__URL__
+
+[ 2015-09-16T09:10:57+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0870s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0870s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='15808652165' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0860s ]
+
+[ 2015-09-16T09:11:06+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0860s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0840s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='15808652165' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0880s ]
+
+[ 2015-09-16T09:22:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0880s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0890s ]
+NOTIC: [8] Undefined offset: 1000 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='15808652165' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0890s ]
+
+[ 2015-09-16T09:23:28+08:00 ] 192.168.0.88 /thinkphp/Admin/Public/__URL__/login/
+ERR: 非法操作:__URL__
+
+[ 2015-09-16T09:23:38+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0850s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0850s ]
+NOTIC: [8] Undefined offset: 1000 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='1002' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0880s ]
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='1002' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=4 and node.status=1 [ RunTime:0.0868s ]
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='1002' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=5 and node.status=1 [ RunTime:0.0870s ]
+
+[ 2015-09-16T09:24:11+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=%E6%98%86%E6%98%8E&method=city
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T09:24:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_weather_info?key=101290101&method=weather
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-16T09:43:43+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0880s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0890s ]
+
+[ 2015-09-16T09:59:13+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0720s ]
+
+[ 2015-09-16T10:10:02+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0900s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0890s ]
+
+[ 2015-09-16T10:10:06+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0890s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0960s ]
+
+[ 2015-09-16T10:10:10+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0900s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0900s ]
+
+[ 2015-09-16T10:34:13+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=%E6%98%86%E6%98%8E&method=city
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+

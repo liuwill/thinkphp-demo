@@ -1,0 +1,35 @@
+<div class="home-container">
+    <div class="module-panel-container">
+        <div class="module-title">
+            <h5>[{$userData["username"]}]角色设置</h5>
+            <a class="ui-btn btn-primary u-floatRight" href="{:U('Admin/User/user_manage')}">返回</a>
+        </div>
+        
+        <div class="console-panel">
+            <div class="panel-manage-content">
+                <div class="row node-structure-table">
+                    <div class="app-body">
+                        <p>
+                            <strong >多角色设置</strong>[全选<input class="node-check role-check" name="all-role" type="checkbox">]
+                        </p>
+                        <foreach name="userRoleGroup" item="singleRole">
+                        <div class="app-ctrl">
+                            <span class="ctrl-title">
+                                <strong title="{$singleRole.remark}">{$singleRole.name}[{$singleRole.role_id}]</strong>
+                                <input class="node-check role-check" type="checkbox" name="roles[]" value="{$singleRole.role_id}" role-id="{$singleRole.role_id}" <if condition="$singleRole.auth === true">checked="checked"</if>>
+                            </span>
+                            <ul class="method-list">
+                                <li title="{$singleRole.status}">状态：{$singleRole.status}</li>
+                                <li title="{$singleRole.remark}">{$singleRole.remark}</li>
+                            </ul>
+                        </div>
+                        </foreach>
+                        <div class="form-group panel-commit-block">
+                            <button type="button" class="btn btn-default" id="userRoleSetBtn" user-id='{$userData["uid"]}'>设置角色</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

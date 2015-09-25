@@ -1,0 +1,42 @@
+<div class="home-container">
+    <div class="module-panel-container">
+        <div class="module-title">
+            <h5>[ {$roleData["name"]} ]权限配置</h5>
+            <a class="ui-btn btn-primary u-floatRight" href="{:U('Admin/Role/role_manage')}">返回</a>
+        </div>
+        
+        <div class="console-panel">
+            <div class="panel-manage-content">
+                <div class="row node-structure-table">
+                    <foreach name="nodeAccessGroup" item="singleApp">
+                    <div class="app-body">
+                        <p>
+                            <strong title="{$singleApp.remark}">{$singleApp.name}-{$singleApp.title}</strong>
+                            <input class="node-check" type="checkbox" name="access[]" value="{$singleApp.id}_1" level='1' <if condition='$singleApp["access"]'>checked</if>>
+                        </p>
+                        <foreach name="singleApp.child" item="singleController">
+                        <div class="app-ctrl">
+                            <span class="ctrl-title">
+                                <strong title="{$singleController.remark}">{$singleController.name}-{$singleController.title}</strong>
+                                <input class="node-check" type="checkbox" name="access[]" value="{$singleController.id}_2" level='2' <if condition='$singleController["access"]'>checked</if>>
+                            </span>
+                            <ul class="method-list">
+                                <foreach name="singleController.child" item="singleMethod">
+                                <li title="{$singleMethod.remark}">
+                                    <span>{$singleMethod.name}-{$singleMethod.title}</span>
+                                    <input class="node-check" type="checkbox" name="access[]" value="{$singleMethod.id}_3" level='3' <if condition='$singleMethod["access"]'>checked</if>>
+                                </li>
+                                </foreach>
+                            </ul>
+                        </div>
+                        </foreach>
+                        <div class="form-group panel-commit-block">
+                            <button type="button" class="btn btn-default" id="roleConfigBtn" role-id="{$Think.get.role}">更新配置</button>
+                        </div>
+                    </div>
+                    </foreach>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>后台管理系统-RBAC by ThankPHP</title>
+    <!--<link rel='stylesheet' href='/static/lib/pure/pure-min.css' />-->
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='/static/styles/global.css' />
+    <link rel='stylesheet' href='/static/styles/main.css' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+</head>
+<body class="main-body">
+<!--[if IE 8]>
+<div class="alert alert-warning text-center" style="margin-bottom:0;">
+    <p>你的浏览器不支持网站的一些新特性，请升级你的浏览器至<a href="http://se.360.cn/">360浏览器</a>或<a href="http://browsehappy.com/">Chrome</a>。</p>
+    <p>2015年了，IE8老了...</p>
+</div>
+<![endif]-->
+<!--[if lt IE 8]>
+<div class="alert alert-danger text-center" style="margin-bottom:0;">
+    <p>你的浏览器不支持网站的一些新特性，请升级你的浏览器至<a href="http://se.360.cn/">360浏览器</a>或<a href="http://browsehappy.com/">Chrome</a>。</p>
+    <p>2015年了，IE7及以下都老了...</p>
+</div>
+<![endif]-->
+<div class="wrapper">
+    <!---- main-body [start]---->
+    <div class="top-menu-bar">
+        <div class="topbar-head u-floatLeft">
+            <a href="{:U('Admin/Index/index')}" class="topbar-logo u-floatLeft">
+                <span class="glyphicon glyphicon-blackboard" aria-hidden="true"></span>
+                <span class="logo-text">后台管理<small>alpha</small></span>
+            </a>
+        </div>
+        <div class="topbar-nav u-floatLeft dropdown">
+            <a class="dropdown-toggle topbar-btn topbar-nav-btn">
+                <span>功能与服务</span><span class="caret">
+            </a>
+            <div class="dropdown-menu topbar-nav-list u-clearfix">
+                <div class="topbar-nav-col">
+                    <div class="topbar-nav-item">
+                        <p class="topbar-nav-item-title">权限管理</p>
+                        <ul>
+                            <li><a href="{:U('Admin/User/user_manage')}">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                                <span>用户管理</span>
+                                <span class="topbar-nav-item-short"></span>
+                            </a></li>
+                            <li><a href="{:U('Admin/Role/role_manage')}">
+                                <span class="glyphicon glyphicon-king" aria-hidden="true"></span>
+                                <span>角色管理</span>
+                                <span class="topbar-nav-item-short"></span>
+                            </a></li>
+                            <li><a href="{:U('Admin/Role/node_manage')}">
+                                <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span>
+                                <span>功能管理</span>
+                                <span class="topbar-nav-item-short"></span>
+                            </a></li>
+                        </ul>
+                        <div class="topbar-nav-gap"></div>
+                    </div>
+                    <div class="topbar-nav-item">
+                        <p class="topbar-nav-item-title">展示功能</p>
+                        <ul>
+                            <li class="topbar-unservice"><a href="{:U('Admin/Info/query_weather')}">
+                                <span class="glyphicon glyphicon-cloud" aria-hidden="true"></span>
+                                <span>查看天气</span>
+                                <span class="topbar-nav-item-short"></span>
+                            </a></li>
+                            <li class="topbar-unservice"><a href="">
+                                <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                                <span>查看时间</span>
+                                <span class="topbar-nav-item-short"></span>
+                            </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="topbar-info u-floatRight">
+            <div class="u-floatLeft">
+                <div class="topbar-info-item topbar-btn topbar-btn-search u-floatLeft">
+                    <a href="" class="topbar-btn">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        <span>搜索</span>
+                    </a>
+                </div>
+                <div class="topbar-info-item topbar-btn topbar-btn-help u-floatLeft">
+                    <a href="" class="topbar-btn">
+                        <span>帮助</span>
+                    </a>
+                </div>
+            </div>
+            <div class="u-floatRight">
+                <div class="dropdown topbar-info-item">
+                    <a class="dropdown-toggle topbar-btn">
+                        <span>{$adminEmail}</span>
+                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li ng-repeat="link in navLinks.userLink.links" class="topbar-info-btn">
+                            <a href="{:U('Admin/Public/loginout')}" target="_self" ><span>退出</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="main-slider-menu">
+            <div class="sidebar-inner">
+                <div class="slidebar-fold icon-unfold"></div>
+                <div class="sidebar-nav main-nav">
+                    <div class="sidebar-title">
+                        <span class="sidebar-title-icon glyphicon glyphicon-play"></span>
+                        <span class="sidebar-title-text">权限管理</span>
+                    </div>
+                    <ul class="sidebar-list">
+                        <li class="nav-item">
+                            <a href="{:U('Admin/Role/add_role')}" class="sidebar-trans">
+                                <div class="nav-icon sidebar-trans">
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                </div>
+                                <span class="nav-title">添加角色</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{:U('Admin/Role/role_manage')}" class="sidebar-trans">
+                                <div class="nav-icon sidebar-trans">
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                </div>
+                                <span class="nav-title">角色管理</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{:U('Admin/Role/node_manage')}" class="sidebar-trans">
+                                <div class="nav-icon sidebar-trans">
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                </div>
+                                <span class="nav-title">功能管理</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{:U('Admin/Role/add_node')}" class="sidebar-trans">
+                                <div class="nav-icon sidebar-trans">
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                </div>
+                                <span class="nav-title">添加功能</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="sidebar-trans">
+                                <div class="nav-icon sidebar-trans">
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                </div>
+                                <span class="nav-title">权限管理</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sidebar-nav main-nav sidebar-nav-fold">
+                    <div class="sidebar-title">
+                        <span class="sidebar-title-icon glyphicon glyphicon-play"></span>
+                        <span class="sidebar-title-text">用户管理</span>
+                    </div>
+                    <ul class="sidebar-list">
+                        <li class="nav-item">
+                            <a href="{:U('Admin/User/user_manage')}" class="sidebar-trans">
+                                <div class="nav-icon sidebar-trans">
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                </div>
+                                <span class="nav-title">用户管理</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{:U('Admin/User/add_user')}" class="sidebar-trans">
+                                <div class="nav-icon sidebar-trans">
+                                    <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                                </div>
+                                <span class="nav-title">添加用户</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content-right">
+            <div class="main-content-body">
+                <include file="$mainBodyPath" />
+            </div>
+            <!--<div class="account-footer">
+                <span>Copyright&nbsp;&nbsp;©&nbsp;2015&nbsp;liuwill.com&nbsp;&nbsp;</span>
+                <a href="/thinkphp/index.php/Admin/Index/">首页</a>
+                <span>Design for RBAC</span>
+            </div>-->
+        </div>
+    </div>
+    <!---- main-body [end]---->
+</div>
+<!--================START 结果提示弹窗=================-->
+<div class="modal global-modal-window in window-modal-top" window-type="notify-result-area" tabindex="-1" role="dialog" aria-labelledby="notify-result-area" aria-hidden="false"><div class="modal-backdrop  in"></div>
+    <div class="modal-dialog modal-nm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title notice-modal-id">消息提示</h4>
+            </div>
+            <div class="modal-body">
+                <div class="well global-asysc-none notify-result-area" table-type="notify-result-area">暂无提示....</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--================END 结果提示弹窗=================-->
+<script src="/static/lib/jquery/js/jquery.min.js"></script>
+<script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    window._ADMIN_GLOBAL_CONFIG = {
+        "global_env":"{$globalEnv}",
+        "my_name":"<?= $myUserName?>",
+        "module_name":"{$moduleName}",
+        "user-login-state":'<?= $userLoginState ?>'
+    };
+    
+    window._ADMIN_API_URL = {
+        "add_new_role":"Role/add_role_handle",
+        "set_role_access":"Role/set_access",
+        "set_user_role_handle":"Role/set_user_role_handle",
+        "node_list":"Role/node_list",
+        "node_group":"Role/node_group",
+        "node_manage":"Role/node_manage",
+        "add_new_node":"Role/add_node_handle",
+        "create_new_account":"User/create_account",
+        "admin_server_addr":"/thinkphp/index.php/Admin/",
+        "admin-login-service":"Public/login_request",
+        "admin-index":"Index"
+    };
+</script>
+<!--src="/static/scripts/login.js"-->
+<script src="/static/scripts/app.js"></script>
+<script ></script>
+</body>
+</html>

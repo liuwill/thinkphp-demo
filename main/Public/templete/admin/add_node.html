@@ -1,0 +1,57 @@
+<div class="home-container">
+    <div class="module-panel-container">
+        <div class="module-title">
+            <h5>添加新功能</h5>
+        </div>
+        
+        <div class="console-panel">
+            <form class="user-add-form">
+                <div class="form-group">
+                    <label for="pidInputSelect">父节点</label>
+                    <select class="form-control extra-form-input" id="pidInputSelect" name="pid">
+                        <option value="0" default-level="1">根应用[根]</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="nodenameInput">节点名称</label>
+                    <input type="text" class="form-control" id="nodenameInput" placeholder="应用名称" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="nodeRemarkInput">节点描述</label>
+                    <input type="text" class="form-control" id="nodeRemarkInput" placeholder="应用描述" name="remark">
+                </div>
+                <div class="form-group">
+                    <label for="nodeTitleInput">节点简述</label>
+                    <input type="text" class="form-control" id="nodeTitleInput" placeholder="应用简述" name="title">
+                </div>
+                <div class="form-group">
+                    <label for="statusInput">状态</label>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" id="statusInput" checked name="status"> 是否开启
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="nodeSortInput">排序</label>
+                    <input type="number"  class="extra-form-input form-control" id="nodeSortInput" placeholder="排序" name="sort" value="1">
+                </div>
+                <div class="form-group">
+                    <label for="levelTypeRadio">节点类型</label>
+                    <div class="radio node-type-radio" node-type='application'>
+                        <label><input type="radio" name="levelTypeRadio" id="levelTypeRadio1" value="1" checked>应用</label>
+                    </div>
+                    <div class="radio disabled node-type-radio" node-type='controller'>
+                        <label><input type="radio" name="levelTypeRadio" id="levelTypeRadio2" value="2" disabled>控制器</label>
+                    </div>
+                    <div class="radio disabled node-type-radio" node-type='function'>
+                        <label><input type="radio" name="levelTypeRadio" id="levelTypeRadio3" value="3" disabled>动作方法</label>
+                    </div>
+                </div>
+                <!--<input type="hidden" class="extra-form-input" name="pid" id="pidInput" value='0'>-->
+                <!--<input type="hidden" class="extra-form-input" name="level" id="levelInput" value='1'>-->
+                <button type="button" class="btn btn-default" id="addNodeBtn">添加新功能</button>
+            </form>
+        </div>
+    </div>
+</div>

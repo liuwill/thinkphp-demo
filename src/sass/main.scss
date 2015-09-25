@@ -1,0 +1,137 @@
+.main-body{background: #fff}
+        
+/* *页面顶部菜单* */
+/*#008eb7;#2f3b53*/
+.top-menu-bar{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 101;
+    background: #09C;
+}
+.top-menu-bar .topbar-head {background: #008fbf;height: 50px;}
+.top-menu-bar .topbar-logo{
+    display: block;width: 200px;font-size: 18px;color: #FFF;text-align: center;line-height: 50px;
+    background: #0087b4;/*background: #0099cc;*/
+}
+.top-menu-bar .topbar-btn{color: #fff;font-size: 14px;line-height: 50px;cursor: pointer}
+
+.aliyun-console-topbar .topbar-info {background: #008fbf;}
+.top-menu-bar .topbar-info-item {display: inline-block;margin-left: 1px;}
+.top-menu-bar .topbar-info .topbar-btn {padding: 0 10px;height: 50px;display: block;z-index: 2;background: #09c;}
+.top-menu-bar .topbar-info .topbar-btn:hover {background: #008fbf;}
+.top-menu-bar .topbar-info .topbar-btn-search {padding: 0;margin-left: 1px;}
+
+.top-menu-bar .topbar-info .dropdown .dropdown-menu {width: 100%;min-width: 0px;margin-top: -1px;border: none;}
+.top-menu-bar .topbar-info .topbar-info-btn {height: 40px;border-bottom: 1px solid #eaedf1;}
+.top-menu-bar .topbar-info .topbar-info-btn a {line-height: 40px;padding-left: 10px;}
+.top-menu-bar .topbar-info .dropdown.open .topbar-btn {color: #333;background: #fff;border-bottom: 1px solid #eaedf1;position: relative;}
+
+/**顶部功能菜单*/
+.top-menu-bar .topbar-nav .topbar-nav-btn {padding: 0 20px;display: inline-block;height: 50px;}
+.top-menu-bar .topbar-nav.open .topbar-nav-btn {background: #fff;color: #333;}
+.top-menu-bar .topbar-nav-list {border: none;padding: 10px;margin-top: 0;white-space: nowrap;}            
+.top-menu-bar .dropdown .dropdown-menu {
+    z-index: 1;
+    font-size: 12px;
+    border-radius: 0;
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.top-menu-bar .topbar-nav-list .topbar-nav-col {display: inline-block;vertical-align: top;padding: 0 10px;}
+.top-menu-bar .topbar-nav-list .topbar-nav-item .topbar-nav-item-title {margin: 3px 0px;color: #999;font-weight: 600;}
+.top-menu-bar .topbar-nav-list .topbar-nav-item ul {padding: 0;margin: 10px 0 0 0;list-style: none;}
+.top-menu-bar .topbar-nav-list .topbar-nav-item ul li {min-width: 180px;height: 30px;line-height: 30px;margin-bottom: 2px;}
+.top-menu-bar .topbar-nav-list .topbar-nav-item ul li a {display: block;height: 100%;padding: 0 10px;text-decoration: none;color: #333;}
+.top-menu-bar .topbar-nav-list .topbar-nav-item ul li a:hover {background-color: #f2f2f2;}
+.top-menu-bar .topbar-nav-list .topbar-nav-item .topbar-nav-gap {border-top: 1px solid #f2f2f2;width: 100%;margin: 10px 0;}
+.top-menu-bar .topbar-nav-list .topbar-nav-item ul li.topbar-unservice a {color: #999;}
+
+/* ** 页面主要区域（左侧菜单） ** */
+.main-content{height: auto;display: block;width: 100%}
+.main-slider-menu{width: 200px;height: 100%;position: fixed;top: 50px;bottom: 0px;background-color: #293038;z-index: 102;overflow-x: hidden;}
+.main-slider-menu .slidebar-fold{
+    height: 30px;width: 200px;
+    background: #394555;color: #aeb9c2;
+    text-align: center;font-size: 12px;
+    line-height: 30px !important;
+    user-select: none;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.main-slider-menu .sidebar-nav{width: 200px;}
+.main-slider-menu .sidebar-nav .sidebar-title{height: 40px;background: #22282e;color: #fff;line-height: 40px;position: relative;cursor: pointer;-webkit-user-select: none;}
+.main-slider-menu .sidebar-nav .sidebar-title:hover {background: #414d5c;}
+.main-slider-menu .sidebar-nav .sidebar-title-text{}
+.main-slider-menu .sidebar-nav .sidebar-title-icon {
+    display: inline-block;
+    margin: 0 8px 0 20px;
+    vertical-align: middle;
+    transition: transform 0.12s;
+    -o-transition: -o-transform 0.12s;
+    -ms-transition: -ms-transform 0.12s;
+    -moz-transition: -moz-transform 0.12s;
+    -webkit-transition: -webkit-transform 0.12s;
+}
+.main-slider-menu .sidebar-nav-fold ul {height: 0 !important;overflow: hidden;}
+.main-slider-menu .sidebar-nav ul {margin: 0px;padding: 0px;list-style: none;overflow: hidden;}
+.main-slider-menu .sidebar-trans {
+    -o-transition: all 0.12s ease,0.12s ease;
+    -ms-transition: all 0.12s ease,0.12s ease;
+    -moz-transition: all 0.12s ease,0.12s ease;
+    -webkit-transition: all 0.12s ease,0.12s ease;
+}
+.main-slider-menu .sidebar-nav li a {display: block;width: 100%;height: 40px;line-height: 40px;overflow: hidden;}
+.main-slider-menu .sidebar-nav li a:hover {background: #37424f;}
+.main-slider-menu .sidebar-nav .nav-icon {width: 50px;text-align: center;font-size: 16px;float: left;color: #aeb9c2;}
+.main-slider-menu .sidebar-nav .nav-title {float: left;overflow: hidden;color: #fff;white-space: nowrap;text-overflow: ellipsis;display: block;width: 130px;}
+.main-slider-menu .sidebar-nav-fold .sidebar-title {background: #37424f;border-bottom: 1px solid #414d5c;}
+
+.icon-unfold:before {content: "Menu";}
+.icon-arrow-down:before{content:"*"}
+
+.main-content-right{margin-left: 200px;background: #fff;position: relative;top: 50px;}
+
+/** 控制面板基础版界面效果 **/
+.module-panel-container{padding: 0 15px;}
+.module-title{padding: 10px 0;border-bottom: 1px solid #DDD;}
+.module-title h5{display: inline-block;text-indent: 8px;border-left: 2px solid #88B7E0;}
+
+.console-link-list{list-style: none;padding: 0}
+.console-link-list li {border: 1px solid #e1e6eb;margin-bottom: 20px;}
+.console-link-list li:hover {border-color: #c5ced8;}
+.console-link-list li:hover .link-icon {border-color: #0099cc;}
+.console-link-list .link-icon{width: 105px;border-left: 5px solid #f5f6fa;background: #f5f6fa;}
+.console-link-list li .link-icon .big-icon{margin: 35px 25px 26px;width: 46px;height: 46px;display: inline-block;}
+.big-icon.logo-icon{background: url(/static/images/black_ico.png) no-repeat;background-size: cover}
+.console-link-list li .content {margin: 30px 0 0 25px;}
+
+.ui-btn{font-size: 12px;border-radius: 0px;padding: 8px 16px;height: 32px;line-height: 14px;cursor: pointer}
+.btn-primary {color: #fff;border: 1px solid #09c;background-color: #09c;}
+.btn-primary:hover {color: #fff;border: 1px solid #28b5d6;background-color: #28b5d6;}
+.console-link-list li .link-btn {margin: 30px 60px 0 0;}
+
+.btn-dark{padding: 6px 12px;border-radius: 0px;border: 1px solid #D9DEE4;background-color: #D9DEE4;color: #666;line-height: 20px;height: 32px;margin-left: 2px;}
+.btn-dark:hover{border: 1px solid #546478;background-color: #546478;color: #FFFFFF;}
+
+/* *添加新的用户* */
+.user-add-form{padding-top: 20px}
+.user-add-form input.form-control{background: rgba(255,255,255,.5);border: none;border-bottom: 1px solid #3ba354;}
+.user-add-form input.form-control:focus {color: rgba(0,0,0,.85);border-color: rgba(0,0,0,.2);border-bottom-left-radius: 0;border-top-left-radius: 0;-webkit-appearance: none;-webkit-box-shadow: .3em 0 0 0 rgba(0,0,0,.2) inset;box-shadow: .3em 0 0 0 rgba(0,0,0,.2) inset;}
+
+/* * 功能管理页面 * */
+.panel-manage-content{padding-top:15px}
+.node-structure-table{padding-left: 15px}
+
+.node-structure-table .app-body{padding: 10px;margin-top: 15px;border: 1px solid #f6f6f6;border-radius: 5px;margin-right: 20px}
+.node-structure-table .app-body p{height: 30px;line-height: 30px}
+.node-structure-table .app-body p strong{color: #09C;font-size: 20px}
+.node-structure-table .app-body .app-ctrl{margin: 10px 0;border:1px solid #ccd6e0;height: auto;overflow: hidden}
+.node-structure-table .app-body .app-ctrl .ctrl-title{display: block;height: 36px;line-height: 36px;background: #f8f9fb;padding-left: 10px}
+.node-structure-table .app-body .app-ctrl .ctrl-title strong{color:#090}
+.node-structure-table .app-body .app-ctrl .method-list{border-top: 1px solid #ccd6e0;padding: 5px 2px 2px 5px;}
+.node-structure-table .app-body .app-ctrl .method-list li{padding-left: 10px}
+
+.panel-commit-block{border-top: 1px solid #ccd6e0;margin: 10px 0;padding-top: 10px}

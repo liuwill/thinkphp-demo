@@ -1,0 +1,310 @@
+[ 2015-09-15T10:50:16+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.0740s ]
+
+[ 2015-09-15T11:50:29+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Set_access
+
+[ 2015-09-15T11:51:00+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0740s ]
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 52 行.
+SQL: DELETE FROM `think_access` WHERE `role_id` = null [ RunTime:0.0610s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 55 行.
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 58 行.
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 58 行.
+ERR: SQLSTATE[21S01]: Insert value list does not match column list: 1136 Column count doesn't match value count at row 1
+
+[ 2015-09-15T11:53:12+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0750s ]
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 52 行.
+SQL: DELETE FROM `think_access` WHERE `role_id` = null [ RunTime:0.0850s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 55 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('1','4','1'),('1','5','2'),('1','1','3'),('1','2','3'),('1','3','3'),('1','6','2'),('1','7','3'),('1','8','3') [ RunTime:0.2190s ]
+
+[ 2015-09-15T11:57:54+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0890s ]
+SQL: SELECT * FROM `think_role` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0750s ]
+NOTIC: [8] Undefined variable: role D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 57 行.
+SQL: DELETE FROM `think_access` WHERE `role_id` = null [ RunTime:0.0720s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 60 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('1','4','1'),('1','5','2'),('1','1','3'),('1','2','3'),('1','3','3'),('1','6','2'),('1','7','3'),('1','8','3') [ RunTime:0.0870s ]
+
+[ 2015-09-15T11:58:12+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `think_role` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0790s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0750s ]
+SQL: DELETE FROM `think_access` WHERE `role_id` = 1 [ RunTime:0.1300s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 60 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('1','4','1'),('1','5','2'),('1','1','3'),('1','2','3'),('1','3','3'),('1','6','2'),('1','7','3'),('1','8','3') [ RunTime:0.0890s ]
+
+[ 2015-09-15T11:59:06+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `think_role` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0740s ]
+SQL: DELETE FROM `think_access` WHERE `role_id` = 1 [ RunTime:0.0900s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 60 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('1','4','1'),('1','5','2'),('1','1','3'),('1','2','3'),('1','3','3') [ RunTime:0.0940s ]
+
+[ 2015-09-15T11:59:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `think_role` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0750s ]
+SQL: DELETE FROM `think_access` WHERE `role_id` = 1 [ RunTime:0.0890s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 60 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('1','4','1'),('1','5','2'),('1','1','3'),('1','3','3') [ RunTime:0.0850s ]
+
+[ 2015-09-15T12:01:04+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `think_role` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0740s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0800s ]
+SQL: DELETE FROM `think_access` WHERE `role_id` = 1 [ RunTime:0.0940s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 60 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('1','4','1'),('1','5','2'),('1','2','3'),('1','3','3') [ RunTime:0.0850s ]
+
+[ 2015-09-15T12:01:27+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0740s ]
+
+[ 2015-09-15T12:01:59+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_node_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0740s ]
+SQL: INSERT INTO `think_node` (`name`,`remark`,`status`,`title`,`sort`,`pid`,`level`) VALUES ('current_time','获取当前时间','1','通过远程调用获取当前时间的服务','1','5','3') [ RunTime:0.1090s ]
+
+[ 2015-09-15T12:02:04+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/node_list
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_node` [ RunTime:0.0740s ]
+SQL: SELECT * FROM `think_node` ORDER BY sort  [ RunTime:0.0740s ]
+
+[ 2015-09-15T12:02:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `think_role` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0760s ]
+SQL: DELETE FROM `think_access` WHERE `role_id` = 1 [ RunTime:0.0900s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 60 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('1','4','1'),('1','5','2'),('1','2','3'),('1','3','3'),('1','9','3') [ RunTime:0.0920s ]
+
+[ 2015-09-15T12:02:49+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/add_role_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0740s ]
+SQL: INSERT INTO `think_role` (`name`,`remark`,`status`) VALUES ('reader','信息查看者','1') [ RunTime:0.0890s ]
+
+[ 2015-09-15T12:03:00+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `think_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0760s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0770s ]
+SQL: DELETE FROM `think_access` WHERE `role_id` = 2 [ RunTime:0.0760s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 60 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('2','4','1'),('2','6','2'),('2','7','3') [ RunTime:0.0880s ]
+
+[ 2015-09-15T12:08:17+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/User/create_account
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0720s ]
+SQL: INSERT INTO `admin_user` (`username`,`password`,`mobile`,`email`,`type`,`regtime`) VALUES ('reader','e10adc3949ba59abbe56e057f20f883e','18888888888','reader@nobanus.com','user','2015-09-15 12:08:17') [ RunTime:0.1240s ]
+
+[ 2015-09-15T16:09:15+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_user_role_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0750s ]
+SQL: SELECT * FROM `admin_user` WHERE `uid` = 1001 LIMIT 1   [ RunTime:0.0750s ]
+SQL: SHOW COLUMNS FROM `think_role_user` [ RunTime:0.0780s ]
+SQL: DELETE FROM `think_role_user` WHERE `user_id` = '1001' [ RunTime:0.0740s ]
+NOTIC: [8] Use of undefined constant roles - assumed 'roles' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 61 行.
+SQL: INSERT INTO `think_role_user` (`role_id`,`user_id`) VALUES ('2','1001') [ RunTime:0.1210s ]
+
+[ 2015-09-15T17:06:42+08:00 ] 192.168.0.88 /thinkphp/Admin/Info/%7BU('Admin/Index')%7D
+ERR: 非法操作:{U('Admin
+
+[ 2015-09-15T17:06:51+08:00 ] 192.168.0.88 /thinkphp/Admin/Info/%7BU('Admin/Index/index')%7D
+ERR: 非法操作:{U('Admin
+
+[ 2015-09-15T17:55:34+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=%E7%8E%89%E6%BA%AA
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T17:56:43+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=%E7%8E%89%E6%BA%AA
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-15T17:57:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=%E7%8E%89%E6%BA%AA
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-15T18:04:14+08:00 ] 192.168.0.88 /thinkphp/Admin/Info/Info/get_baidu_city_info?key=%E7%8E%89%E6%BA%AA&method=city
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:Info
+
+[ 2015-09-15T18:04:57+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=%E6%98%86%E6%98%8E&method=city
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:05:05+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_taobao_ip_info?key=101290101&method=ip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-09-15T18:05:08+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_weather_info?key=101290101&method=weather
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-15T18:08:27+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=%E7%8E%89%E6%BA%AA&method=city
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-15T18:09:03+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_weather_info?key=%E6%98%86%E6%98%8E&method=weather
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:09:07+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=%E6%98%86%E6%98%8E&method=city
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-09-15T18:09:12+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_weather_info?key=101290101&method=weather
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:09:30+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_taobao_ip_info?key=115.29.35.2&method=ip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-15T18:13:41+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=115.29.35.2&method=city
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:13:56+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=115.29.35.2&method=city
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:14:12+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_taobao_ip_info?key=115.29.35.2&method=ip
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:14:17+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_city_info?key=115.29.35.2&method=city
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-09-15T18:14:18+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Info/get_baidu_weather_info?key=115.29.35.2&method=weather
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:21:39+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'test' LIMIT 1   [ RunTime:0.0750s ]
+NOTIC: [8] Undefined index: 18608776684 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 89 行.
+SQL: select node.id,node.name from think_role as role,think_role_user as user,think_access as access ,think_node as node where user.user_id='15808652165' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.0750s ]
+
+[ 2015-09-15T18:21:40+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0760s ]
+SQL: SELECT * FROM `think_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0770s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0760s ]
+SQL: DELETE FROM `think_access` WHERE `role_id` = 2 [ RunTime:0.1240s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 127 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('2','4','1'),('2','5','2'),('2','1','3'),('2','2','3'),('2','3','3'),('2','9','3') [ RunTime:0.0840s ]
+
+[ 2015-09-15T18:22:36+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Role/set_user_role_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: db254a1d2a7116c476bf28e575eb0101 D:\www\thinkphp\ThinkPHP\Library\Org\Util\Rbac.class.php 第 171 行.
+
+[ 2015-09-15T18:22:37+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_access
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `think_role` [ RunTime:0.0730s ]
+SQL: SELECT * FROM `think_role` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0710s ]
+SQL: SHOW COLUMNS FROM `think_access` [ RunTime:0.0710s ]
+SQL: DELETE FROM `think_access` WHERE `role_id` = 2 [ RunTime:0.0840s ]
+NOTIC: [8] Use of undefined constant access - assumed 'access' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 127 行.
+SQL: INSERT INTO `think_access` (`role_id`,`node_id`,`level`) VALUES ('2','4','1'),('2','5','2'),('2','1','3'),('2','2','3'),('2','3','3'),('2','9','3') [ RunTime:0.1120s ]
+
+[ 2015-09-15T18:22:43+08:00 ] 192.168.0.5 /thinkphp/index.php/Admin/Role/set_user_role_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-09-15T18:23:42+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Role/set_user_role_handle
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.0720s ]
+SQL: SELECT * FROM `admin_user` WHERE `uid` = 1002 LIMIT 1   [ RunTime:0.0660s ]
+SQL: SHOW COLUMNS FROM `think_role_user` [ RunTime:0.0820s ]
+SQL: DELETE FROM `think_role_user` WHERE `user_id` = '1002' [ RunTime:0.0720s ]
+NOTIC: [8] Use of undefined constant roles - assumed 'roles' D:\www\thinkphp\Application\Admin\Controller\RoleController.class.php 第 61 行.
+SQL: INSERT INTO `think_role_user` (`role_id`,`user_id`) VALUES ('2','1002') [ RunTime:0.0880s ]
+

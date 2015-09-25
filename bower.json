@@ -1,0 +1,35 @@
+{
+  "name": "thinkphp_rbac",
+  "version": "0.0.0",
+  "description": "thinkphp_rbac",
+  "authors": [
+    "liuwill"
+  ],
+  "license": "MIT",
+  "homepage": "www.liuwill.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.3",
+    "requirejs": "2.1.19",
+    "bootstrap": "3.3.5"
+  },
+  "exportsOverride": {
+    "bootstrap": {
+      "js": "dist/js/*.js",
+      "css": "dist/css/*.css",
+      "fonts": "dist/fonts/*"
+    },
+    "requirejs": {
+      "js": "require.js"
+    },
+    "jquery": {
+      "js": "dist/*"
+    }
+  }
+}

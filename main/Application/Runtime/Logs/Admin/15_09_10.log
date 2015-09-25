@@ -1,0 +1,10 @@
+[ 2015-09-10T11:05:57+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Public/login_request
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `admin_user` [ RunTime:0.1834s ]
+SQL: SELECT * FROM `admin_user` WHERE `username` = 'liuwill' LIMIT 1   [ RunTime:0.1668s ]
+
+[ 2015-09-10T11:24:21+08:00 ] 192.168.0.88 /thinkphp/index.php/Admin/Index
+ERR: Think\Controller:dispatch方法不存在！
+

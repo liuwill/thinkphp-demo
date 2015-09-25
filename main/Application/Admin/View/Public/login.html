@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>后台登录-RBAC by ThankPHP</title>
+    <!--<link rel='stylesheet' href='/static/lib/pure/pure-min.css' />-->
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='/static/styles/global.css' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <style>
+        .account-background-img{background: url({$backImgUrl}) 50% 50% / cover no-repeat fixed;}
+    </style>
+</head>
+<body class="account-background account-background-img">
+<!--[if IE 8]>
+<div class="alert alert-warning text-center" style="margin-bottom:0;">
+    <p>你的浏览器不支持网站的一些新特性，请升级你的浏览器至<a href="http://se.360.cn/">360浏览器</a>或<a href="http://browsehappy.com/">Chrome</a>。</p>
+    <p>2015年了，IE8老了...</p>
+</div>
+<![endif]-->
+<!--[if lt IE 8]>
+<div class="alert alert-danger text-center" style="margin-bottom:0;">
+    <p>你的浏览器不支持网站的一些新特性，请升级你的浏览器至<a href="http://se.360.cn/">360浏览器</a>或<a href="http://browsehappy.com/">Chrome</a>。</p>
+    <p>2015年了，IE7及以下都老了...</p>
+</div>
+<![endif]-->
+<div class="wrapper">
+    <header class="admin-header opacity-header fixed top">
+        <div class="site-menu">
+            <div class="header-navbar-container ui-nav-wrapper header-nav-container">
+                <nav class="navbar navbar-static-top ui-navbar" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header  col-xs-2">
+                            <a class="navbar-brand" href="/thinkphp/index.php/Admin/Index/"><span class="site-logo"><span class="icon-word-text">LiuWill</span></a>
+                        </div>
+                        <div class="ui-nav col-xs-offset-2 col-xs-8">
+                            <ul class="nav navbar-nav main-menu">
+                                <!--menus-->
+                                <li class="main-link-list ui-top-menu" data-show-status="nomal">
+                                    <a class="main-link" href="/thinkphp/index.php/Home/Index/">
+                                        <span class="sl-icon-account"></span>
+                                        <span class="main-link-text">前端</span>
+                                    </a>
+                                </li>
+                                <li class="main-link-list ui-top-menu" data-show-status="nomal">
+                                    <a class="main-link" href="/thinkphp/index.php/Admin/Index/">
+                                        <span class="sl-icon-account"></span>
+                                        <span class="main-link-text">后台</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                </nav>
+            </div>
+            <!--secondaryNav-->
+            <!--jumbotron-->
+        </div>
+    </header>
+
+    <!---- login-body [start]---->
+    <div class="login-main-panel">
+        <div class="login-box">
+            <div class="form account-form icon-form">
+                <div class="field">
+                    <input class="form-control large-input account-data-in login-input-ctrl" data-type="username" id="userNameInput" type="text" placeholder="用户名/手机号"/>
+                    <span class="glyphicon glyphicon-user i-icon" aria-hidden="true"></span>
+                </div>
+                <div class="field">
+                    <input class="form-control large-input account-data-in login-input-ctrl" data-type="password" id="passwordInput" type="password" placeholder="密码"/>
+                    <span class="glyphicon glyphicon-lock i-icon" aria-hidden="true"></span>
+                </div>
+                <!--<div class="field words" style="text-align: right">
+                    <a class="forget-password gray" href="/setting/forget_password.php">忘记密码??</a>
+                </div>-->
+                <div class="field input-group group-input-line">
+                    <input type="text" class="form-control large-input account-data-in login-input-ctrl" maxlength="4" data-type="image" id="imageCodeInput" placeholder="图形验证码" style="">
+                    <span class="glyphicon glyphicon-asterisk i-icon" aria-hidden="true"></span>
+                    <span class="input-group-btn" style="float: left;width: 40%;opacity: .6">
+                        <img class="login-img-code refresh-captcha captcha-img" id="loginCodeImg" raw-src="/thinkphp/index.php/Admin/Public/captcha" src="/thinkphp/index.php/Admin/Public/captcha" alt=""/>
+                    </span>
+                </div>
+                <div class="text-center errorMsg loginErrorNotice" id="loginErrorNotice" style="display: none;"></div>
+                <div class="field"><button class="btn btn-default btn-block general-blue-btn user-login-btn account-data-submit disabled" id="loginSubmitBtn">登 &nbsp;&nbsp; 录</button></div>
+                <input type="submit" style="display: none">
+            </div>
+            <!--<p>没有账号？<a href="/h5/register">立即注册</a></p>-->
+        </div>
+    </div>
+    <!---- login-body [end]---->
+    <div class="account-footer">
+        <span>Copyright&nbsp;&nbsp;©&nbsp;2015&nbsp;liuwill.com&nbsp;&nbsp;</span>
+        <a href="/thinkphp/index.php/Admin/Index/">首页</a>
+        <span>Design for RBAC</span>
+        <!--<a class="photo-by" ng-href="" target="_blank" href="">Photo by </a>-->
+    </div>
+</div>
+<!--================START 结果提示弹窗=================-->
+<div class="modal global-modal-window in window-modal-top" window-type="notify-result-area" tabindex="-1" role="dialog" aria-labelledby="notify-result-area" aria-hidden="false"><div class="modal-backdrop  in"></div>
+    <div class="modal-dialog modal-nm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title notice-modal-id">消息提示</h4>
+            </div>
+            <div class="modal-body">
+                <div class="well global-asysc-none notify-result-area" table-type="notify-result-area">暂无提示....</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--================END 结果提示弹窗=================-->
+<script src="/static/lib/jquery/js/jquery.min.js"></script>
+<script src="/static/lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    window._ADMIN_GLOBAL_CONFIG = {
+        "noban_env":"<?= $nobanEnv?>",
+        "my_name":"<?= $myUserName?>",
+        "user-login-state":'<?= $userLoginState ?>'
+    };
+    
+    window._ADMIN_API_URL = {
+        "admin_server_addr":"/thinkphp/index.php/Admin/",
+        "admin-login-service":"Public/login_request",
+        "admin-index":"Index"
+    };
+</script>
+<script src="/static/scripts/login.js"></script>
+</body>
+</html>
