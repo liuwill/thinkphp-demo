@@ -81,12 +81,18 @@ module.exports = function(grunt) {
         copy: {
             bower:{
                 files:[{
-                expand: true,
-                dot: true,
-                cwd: 'deploy/static/lib/bootstrap/',
-                dest: 'deploy/static/lib/fonts/',
-                src: ['*.{eot,svg,ttf,woff,woff2}']
-            }]},
+                    expand: true,
+                    dot: true,
+                    cwd: 'deploy/static/lib/bootstrap/',
+                    dest: 'deploy/static/lib/fonts/',
+                    src: ['*.{eot,svg,ttf,woff,woff2}']
+                },{
+                    expand: true,
+                    dot: true,
+                    cwd: 'resources/lib/prettify/',
+                    dest: 'deploy/static/lib/prettify/',
+                    src: ['**']
+                }]},
             main:{
                 files:[{
                     expand: true,
