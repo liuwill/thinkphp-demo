@@ -5,6 +5,11 @@
 > 演示网址:[Demo](http://www.liuwill.com/thinkphp/index.php/Admin/Index)
 
 
+## 部署
+PHP 5.6
+Node 4
+npm 2
+
 ## 项目说明
 该项目是为了展示使用 `ThinkPHP RBAC` 模块而编写的简单演示系统，通过操作角色和权限相关表，实现后台模块的基于角色的权限管理。该系统使用`Jquery+Bootstrap`作为前端框架，界面风格是仿阿里云的管理控制台实现的；目前未增加响应式支持。页面渲染基本采用ThinkPHP视图模版，只有功能使用JS交互代码。
 
